@@ -2,7 +2,7 @@
 """IMport required module/lib"""
 import csv
 import math
-from typing import List, Tuple, Dict
+from typing import List, Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
@@ -44,7 +44,7 @@ class Server:
         except IndexError as f:
             return []
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """returns a dict containing dataset"""
         page_data = self.get_page(page, page_size)
         total_pages = len(self.dataset()) // page_size
