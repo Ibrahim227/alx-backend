@@ -20,8 +20,8 @@ class MRUCache(BaseCaching):
             del self.cache_data[popItem]
             print("DISCARD: {}".format(popItem))
 
-        self.cache_data[key] = item
         self.access.append(key)
+        self.cache_data[key] = item
 
     def get(self, key):
         """Get method"""
