@@ -21,7 +21,7 @@ class LRUCache(BaseCaching):
             print("DISCARD: {}".format(popItem))
 
         self.cache_data[key] = item
-        # self.access.append(key)
+        self.access.append(key)
 
     def get(self, key):
         """Get method"""
