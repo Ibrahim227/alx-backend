@@ -18,8 +18,7 @@ class Config:
         """Initialize the class"""
         pass
 
-
-app.config.from_object(Config)
+    app.config.from_object(Config)
 
 
 @app.route('/')
