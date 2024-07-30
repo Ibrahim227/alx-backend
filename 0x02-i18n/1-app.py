@@ -19,6 +19,10 @@ class Config:
         pass
 
 
+app.config.from_object(Config)
+
+
+
 @app.route('/')
 def index():
     """ return 1-index.html"""
