@@ -17,8 +17,8 @@ class Config:
     def __init__(self):
         """Initialize the class"""
         pass
-babel.Config['BABEL_DEFAULT_LOCALE'] = "en"
-babel.Config['BABEL_DEFAULT_TIMEZONE'] = "UTC"
+    babel.Config['BABEL_DEFAULT_LOCALE'] = "en"
+    babel.Config['BABEL_DEFAULT_TIMEZONE'] = "UTC"
 
 
 @app.route('/')
