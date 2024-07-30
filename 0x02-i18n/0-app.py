@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 
 @app.route('/')
-#@app.route('/index')
+@app.route('/index')
 def index():
     """return0-index.html"""
     return render_template('0-index.html')
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000)
+    app.run()
