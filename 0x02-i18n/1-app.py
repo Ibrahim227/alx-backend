@@ -23,7 +23,7 @@ class Config:
 @app.route('/index')
 def index():
     """ return 1-index.html"""
-    return
+    return render_template('1-index.html')
 
 
 if __name__ == "__main__":
