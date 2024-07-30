@@ -20,11 +20,10 @@ class Config:
 
 
 @app.route('/')
-@app.route('/index')
 def index():
     """ return 1-index.html"""
     return render_template('1-index.html')
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=5000)
+    app.run(debug=True)
