@@ -6,11 +6,22 @@ from flask_babel import Babel
 
 app = Flask(__name__)
 app.config['BABEL_DEFAULT_LOCALE'] = 'en'
+app.config['BABEL_DEFAULT_TIMEZONE'] = "UTC"
 babel = Babel(app)
 
 
+class Config:
+    """Config class"""
+    LANGUAGES = ["en", "fr"]
+
+    def __init__(self):
+        """Initialize the class"""
+        pass
+
+
 @app.route('/')
-def index();
+@app.route('/index')
+def index():
     """ return 1-index.html"""
     return render_template('1-index.html')
 
