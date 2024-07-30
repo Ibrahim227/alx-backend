@@ -21,6 +21,7 @@ def get_locale():
     """selct and return lang"""
     return request.accept_languages.best_match(['en', 'de', 'fr'])
 
+
 @app.route('/')
 def index() -> str:
     """ return 1-index.html"""
